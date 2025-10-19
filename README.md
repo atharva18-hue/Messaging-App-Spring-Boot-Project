@@ -2,7 +2,7 @@
 
 A secure messaging application built with Spring Boot, featuring user authentication, message management, and a modern web interface.
 
-## 🚀 Features
+##  Features
 
 - **User Authentication & Authorization**
   - JWT-based authentication system
@@ -28,7 +28,7 @@ A secure messaging application built with Spring Boot, featuring user authentica
   - Clean and intuitive user experience
   - Cross-browser compatibility
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Backend**: Spring Boot 3.3.1, Java 22
 - **Database**: PostgreSQL with JPA/Hibernate
@@ -38,7 +38,7 @@ A secure messaging application built with Spring Boot, featuring user authentica
 - **Validation**: Bean Validation API
 - **Utilities**: Lombok, ModelMapper
 
-## 📋 Prerequisites
+##  Prerequisites
 
 Before running this application, make sure you have the following installed:
 
@@ -47,7 +47,7 @@ Before running this application, make sure you have the following installed:
 - **PostgreSQL 12+**
 - **Git**
 
-## 🗄️ Database Setup
+##  Database Setup
 
 1. **Install PostgreSQL** on your system
 2. **Create a new database**:
@@ -60,7 +60,7 @@ Before running this application, make sure you have the following installed:
    GRANT ALL PRIVILEGES ON DATABASE burak TO burak;
    ```
 
-## ⚙️ Configuration
+##  Configuration
 
 1. **Clone the repository**:
    ```bash
@@ -87,7 +87,7 @@ Before running this application, make sure you have the following installed:
    spring.jpa.hibernate.ddl-auto=update
    ```
 
-## 🚀 Running the Application
+##  Running the Application
 
 ### Method 1: Using Maven Wrapper
 ```bash
@@ -108,7 +108,7 @@ mvn spring-boot:run
 1. Open the project in your preferred IDE (IntelliJ IDEA, Eclipse, VS Code)
 2. Run the `Hw2Application.java` main class
 
-## 🌐 Accessing the Application
+##  Accessing the Application
 
 Once the application is running, you can access it at:
 
@@ -117,7 +117,7 @@ Once the application is running, you can access it at:
 - **User Dashboard**: http://localhost:8080/user-dashboard.html
 - **Admin Dashboard**: http://localhost:8080/admin-dashboard.html
 
-## 📱 API Endpoints
+##  API Endpoints
 
 ### Authentication
 - `POST /users/login` - User login
@@ -134,7 +134,7 @@ Once the application is running, you can access it at:
 - `POST /messages` - Send new message
 - `PUT /messages/{id}/read` - Mark message as read
 
-## 👥 User Roles
+##  User Roles
 
 ### Regular User
 - Send and receive messages
@@ -148,7 +148,7 @@ Once the application is running, you can access it at:
 - Access admin dashboard
 - Delete users and messages
 
-## 🔐 Security Features
+##  Security Features
 
 - **JWT Authentication**: Secure token-based authentication
 - **Password Validation**: Strong password requirements
@@ -156,7 +156,7 @@ Once the application is running, you can access it at:
 - **Role-based Access Control**: Secure endpoint access
 - **Session Management**: Proper token lifecycle management
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
