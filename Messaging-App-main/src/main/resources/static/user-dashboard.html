@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/admin-dashboard.css">
+  <link rel="stylesheet" href="/static/styles/user-dashboard.css">
+
+  <script src="scripts/token.js"></script>
+  <script src="scripts/login-check.js"></script>
+</head>
+<body>
+
+
+<header class="header">
+  <a href="user-dashboard.html" id="main-page">
+    <img class="logo" alt="Message App logo" src="burtext.png" />
+  </a>
+  <nav class="main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="send-message.html">SEND MESSAGE</a></li>
+      <li><a class="main-nav-link" href="mailbox.html">MAILBOX</a></li>
+      <li><a id="logout-btn" class="main-nav-link nav-cta" href="login.html">LOGOUT</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<div class="container">
+  <div class="menu">
+    <div class="card">
+      <a href="mailbox.html" class="operation">  <img src="inbox.png" alt="mailbox logo">  <p>MAILBOX </p> </a>
+    </div>
+    <div class="card">
+      <a href="send-message.html" class="operation"> <img src="send.png" alt="send message logo"> <p>SEND MESSAGE</p> </a>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="scripts/user-dashboard.js"></script>
+<script src="scripts/logout.js"></script>
+</body>
+</html>

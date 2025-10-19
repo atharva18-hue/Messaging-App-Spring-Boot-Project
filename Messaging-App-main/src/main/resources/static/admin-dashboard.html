@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/admin-dashboard.css">
+
+    <script src="scripts/token.js"></script>
+    <script src="scripts/admin-check.js"></script>
+
+</head>
+<body>
+
+<header class="header">
+    <a href="admin-dashboard.html">
+        <img class="logo" alt="Message App logo" src="burtext.png" />
+    </a>
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="list-users.html">LIST USERS</a></li>
+            <li><a class="main-nav-link" href="create-user.html">ADD USER</a></li>
+            <li><a class="main-nav-link" href="send-message.html">SEND MESSAGE</a></li>
+            <li><a class="main-nav-link" href="mailbox.html">MAILBOX</a></li>
+            <li><a id="logout-btn" class="main-nav-link nav-cta" href="login.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="container">
+    <div class="menu">
+        <div class="card">
+            <a href="list-users.html" class="operation"> <i class="fa fa-list-ul" aria-hidden="true"></i> <p>LIST USERS</p> </a>
+        </div>
+        <div class="card">
+            <a href="create-user.html" class="operation"> <i class="fa fa-user-plus" aria-hidden="true"></i>  <p>ADD USER </p></a>
+        </div>
+        <div class="card">
+            <a href="mailbox.html" class="operation">  <i class="fa fa-inbox" aria-hidden="true"></i>  <p>MAILBOX </p> </a>
+        </div>
+        <div class="card">
+            <a href="send-message.html" class="operation"> <i class="fa fa-paper-plane" aria-hidden="true"></i> <p>SEND MESSAGE</p> </a>
+        </div>
+    </div>
+</div>
+
+
+<script src="scripts/logout.js"></script>
+</body>
+</html>

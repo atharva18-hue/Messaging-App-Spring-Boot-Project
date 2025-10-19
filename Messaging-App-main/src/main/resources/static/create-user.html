@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <link rel="stylesheet" href="styles/create-user.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+
+    <script src="scripts/token.js"></script>
+    <script src="scripts/admin-check.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="admin-dashboard.html">
+        <img class="logo" alt="Message App logo" src="burtext.png" />
+    </a>
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="list-users.html">LIST USERS</a></li>
+            <li><a class="main-nav-link" href="create-user.html">ADD USER</a></li>
+            <li><a class="main-nav-link" href="send-message.html">SEND MESSAGE</a></li>
+            <li><a class="main-nav-link" href="mailbox.html">MAILBOX</a></li>
+            <li><a id="logout-btn" class="main-nav-link nav-cta" href="login.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="container">
+    <h1>Create User</h1>
+    <form id="create-user-form">
+        <label for="username"></label>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+
+        <label for="password"></label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+
+        <label for="fullName"></label>
+        <input type="text" id="fullName" name="fullName" placeholder="Full name" required>
+
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="address"></label>
+        <input type="text" id="address" name="address" placeholder="Address" required>
+
+
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" id="birthDate" name="birthDate" required>
+
+        <div class="form-bottom">
+        <div class="form-field">
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+            <option value="MALE">Male</option>
+            <option value="FEMALE">Female</option>
+        </select><br>
+        </div>
+
+
+        <div class="form-field">
+        <label for="role">Role:</label><br>
+        <select id="role" name="role">
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select><br>
+        </div>
+        </div>
+
+        <button type="submit">Create User</button>
+    </form>
+</div>
+
+
+<script src="scripts/create-user.js"></script>
+<script src="scripts/logout.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Users</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/list-users.css">
+
+    <script src="scripts/token.js"></script>
+    <script src="scripts/admin-check.js"></script>
+    <script src="scripts/list-users.js"></script>
+    <script src="scripts/logout.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="admin-dashboard.html">
+        <img class="logo" alt="Message app logo" src="burtext.png" />
+    </a>
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="list-users.html">LIST USERS</a></li>
+            <li><a class="main-nav-link" href="create-user.html">ADD USER</a></li>
+            <li><a class="main-nav-link" href="send-message.html">SEND MESSAGE</a></li>
+            <li><a class="main-nav-link" href="mailbox.html">MAILBOX</a></li>
+            <li><a id="logout-btn" class="main-nav-link nav-cta" href="login.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+
+<div class="filter-controls">
+    <label for="filter-field">Filter Field:</label>
+    <select id="filter-field">
+        <option value="username">Username</option>
+        <option value="fullName">Full Name</option>
+        <option value="email">Email</option>
+        <option value="address">Address</option>
+        <option value="gender">Gender</option>
+        <option value="birthDate">Birth Date</option>
+        <option value="role">Role</option>
+    </select>
+
+    <label for="filter-value">Filter Value:</label>
+    <input type="text" id="filter-value">
+    <button id="filter-btn">Filter</button>
+</div>
+
+<table id="user-table">
+    <thead>
+    <tr>
+        <th>Username</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Gender</th>
+        <th>Birth Date</th>
+        <th>Role</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="user-table-body">
+    <!-- Users will be populated here by JS -->
+    </tbody>
+</table>
+<div id="message" style="display: none;"></div>
+
+<!-- Pagination Controls -->
+<div class="pagination-controls">
+    <label for="page-size">Page Size:</label>
+    <select id="page-size">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="25">25</option>
+    </select>
+
+    <label for="page-number">Page Number:</label>
+    <select id="page-number"></select>
+
+    <button id="prev-page">Previous</button>
+    <button id="next-page">Next</button>
+</div>
+
+<!-- Update User Modal -->
+<div id="update-user-modal" style="display: none;">
+    <h2>Update User</h2>
+    <form id="update-user-form">
+        <input type="hidden" id="update-username">
+        <label for="update-field">Field to update:</label>
+        <select id="update-field">
+            <option value="fullName">Full Name</option>
+            <option value="email">Email</option>
+            <option value="address">Address</option>
+            <option value="gender">Gender</option>
+            <option value="birthDate">Birth Date</option>
+            <option value="role">Role</option>
+        </select>
+        <div id="update-value-div">
+            <label for="update-value">New Value:</label>
+            <input type="text" id="update-value">
+        </div>
+        <div id="update-gender-div" style="display: none;">
+            <label for="update-gender">Gender:</label>
+            <select id="update-gender">
+                <option value="MALE">Male</option>
+                <option value="FEMALE">Female</option>
+            </select>
+        </div>
+        <div id="update-birthdate-div" style="display: none;">
+            <label for="update-birthdate">Birth Date:</label>
+            <input type="date" id="update-birthdate">
+        </div>
+        <div id="update-role-div" style="display: none;">
+            <label for="update-role">Role:</label>
+            <select id="update-role">
+                <option value="USER">User</option>
+                <option value="ADMIN">Admin</option>
+            </select>
+        </div>
+        <button type="submit">Update User</button>
+    </form>
+    <button onclick="closeUpdateUserModal()">Cancel</button>
+</div>
+</div>
+
+
+</body>
+</html>

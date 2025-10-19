@@ -1,0 +1,183 @@
+body {
+    background: #edf2ff;
+    font-family: monospace;
+}
+
+/*
+.filter-controls {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #99e9f2;
+}
+
+.filter-controls label, .filter-controls select, .filter-controls input, .filter-controls button {
+    font-size: 16px;
+    color: white;
+}
+
+.filter-controls select, .filter-controls input {
+    padding: 5px;
+    border: 1px solid #99e9f2;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    outline: none;
+}
+
+.filter-controls input::placeholder {
+    color: #99e9f2;
+}
+
+.filter-controls button {
+    padding: 5px 10px;
+    background-color: #99e9f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-controls button:hover {
+    background-color: #78c0cc;
+}
+
+.container {
+    background: url(../background.png);
+    padding-bottom: 60px;
+    height: 100%;
+    width: 100%;
+    padding-top: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: -35px;
+}
+
+ */
+
+header {
+    margin-bottom: 30px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#user-table {
+    margin: 0 auto;
+    font-size: 22px;
+    border-collapse: collapse;
+    width: 90%;
+    border: 1px solid #99e9f2;
+    box-shadow: 0 0 10px #99e9f2, 0 0 20px #99e9f2, 0 0 30px #99e9f2;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #99e9f2;
+    color: white;
+}
+
+thead {
+    background: #ba1797;
+    color: #fff;
+    border-bottom: 3px solid #99e9f2;
+    box-shadow: 0 0 10px #99e9f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2e3b42;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #253239;
+}
+
+tbody tr:hover {
+    background-color: #adb5bd;
+}
+
+/*
+.pagination-controls {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #99e9f2;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.pagination-controls label {
+    margin-right: 10px;
+    color: white;
+}
+
+.pagination-controls select {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #99e9f2;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    outline: none;
+}
+
+.pagination-controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #99e9f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+    background-color: #78c0cc;
+}
+
+ */
+
+.action-btn {
+    margin-right: 10px;
+}
+
+.action-btn i {
+    font-size: 20px;
+}
+
+.remove-btn i {
+    font-size: 20px;
+}
+
+#filter-value {
+    color: white;
+}
+
+.container {
+    margin-top: -34px;
+}

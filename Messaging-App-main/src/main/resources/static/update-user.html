@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update User</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/update-user.css" />
+
+    <script src="scripts/token.js"></script>
+    <script src="scripts/admin-check.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="admin-dashboard.html">
+        <img class="logo" alt="Message App logo" src="burtext.png" />
+    </a>
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="list-users.html">LIST USERS</a></li>
+            <li><a class="main-nav-link" href="create-user.html">ADD USER</a></li>
+            <li><a class="main-nav-link" href="send-message.html">SEND MESSAGE</a></li>
+            <li><a class="main-nav-link" href="mailbox.html">MAILBOX</a></li>
+            <li><a id="logout-btn" class="main-nav-link nav-cta" href="login.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<div class="container">
+    <h2>Update User</h2>
+    <form id="update-user-form">
+        <input type="hidden" id="username" name="username" />
+
+        <label for="field">Field to Update:</label>
+        <select id="field" name="field" required>
+            <option value="">Select a field</option>
+            <option value="fullName">Full Name</option>
+            <option value="email">Email</option>
+            <option value="address">Address</option>
+            <option value="gender">Gender</option>
+            <option value="birthDate">Birth Date</option>
+            <option value="role">Role</option>
+            <!-- Add other fields as needed -->
+        </select><br /><br />
+
+        <div id="dynamic-input-container"></div>
+
+        <button type="submit">Update User</button>
+    </form>
+
+    <div id="message"></div>
+</div>
+
+
+<script src="scripts/update-user.js"></script>
+<script src="scripts/logout.js"></script>
+</body>
+</html>

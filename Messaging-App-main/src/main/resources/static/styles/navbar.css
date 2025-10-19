@@ -1,0 +1,123 @@
+/*
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #adb5bd;
+    padding: 10px;
+    align-items: center;
+}
+
+header a {
+    margin-left: 30px;
+}
+
+nav {
+    margin-right: 40px;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #212529;
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto;
+
+}
+
+.nav-cta {
+    padding: 10px 20px;
+    background: red;
+    border-radius: 10px;
+    background: #edf2ff;
+}
+
+nav ul li a:hover {
+    border-bottom: #212529 1px;
+}
+
+.logo {
+    width: 100px;
+}
+
+ */
+
+body {
+    font-family: monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+header a {
+    margin-left: 30px;
+}
+
+nav {
+    margin-right: 40px;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 38px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ebaca2;
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto;
+
+    color: #99e9f2; /* Cyan color */
+    font-weight: bold;
+    text-shadow: 0 0 1px #99e9f2, 0 0 2px #99e9f2, 0 0 2px #99e9f2;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+.main-nav-link:hover {
+    color: #99e9f2;
+    text-shadow: 0 0 10px #99e9f2, 0 0 30px #99e9f2, 0 0 50px #99e9f2;
+}
+
+
+.nav-cta {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #ba1797;
+}
+
+nav ul li a:hover {
+    border-bottom: #212529 1px;
+}
+
+.logo {
+    width: 100px;
+}

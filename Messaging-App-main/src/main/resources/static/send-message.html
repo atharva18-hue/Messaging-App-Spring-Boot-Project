@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Message</title>
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/send-message.css">
+  <link rel="stylesheet" href="/static/styles/form.css">
+
+  <script src="scripts/token.js"></script>
+  <script src="scripts/login-check.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <a href="admin-dashboard.html" id="main-page">
+    <img class="logo" alt="Message app logo" src="burtext.png"/>
+  </a>
+  <nav class="main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" id="nav-list-user" href="list-users.html">LIST USERS</a></li>
+      <li><a class="main-nav-link" id="nav-add-user" href="create-user.html">ADD USER</a></li>
+      <li><a class="main-nav-link" href="send-message.html">SEND MESSAGE</a></li>
+      <li><a class="main-nav-link" href="mailbox.html">MAILBOX</a></li>
+      <li><a id="logout-btn" class="main-nav-link nav-cta" href="login.html">LOGOUT</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="container">
+  <h1>Send Message</h1>
+  <form id="send-message-form">
+    <label for="toUser">To:</label>
+    <input type="text" id="toUser" name="toUser" required>
+    <div id="userDropdown" class="dropdown-content"></div>
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="content">Message:</label>
+    <textarea id="content" name="content" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+  <div id="message"></div>
+</div>
+
+<script src="scripts/send-message.js"></script>
+<script src="scripts/logout.js"></script>
+</body>
+</html>

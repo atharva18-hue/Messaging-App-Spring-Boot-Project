@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailbox</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="/static/styles/mailbox.css">
+
+    <script src="scripts/token.js"></script>
+    <script src="scripts/login-check.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="admin-dashboard.html" id="main-page">
+        <img class="logo" alt="Message app logo" src="burtext.png" />
+    </a>
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link" id="nav-list-user" href="list-users.html">LIST USERS</a></li>
+            <li><a class="main-nav-link" id="nav-add-user" href="create-user.html">ADD USER</a></li>
+            <li><a class="main-nav-link" href="send-message.html">SEND MESSAGE</a></li>
+            <li><a class="main-nav-link" href="mailbox.html">MAILBOX</a></li>
+            <li><a id="logout-btn" class="main-nav-link nav-cta" href="login.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h2 id="mailbox-title">Mailbox</h2>
+    <div class="mailbox-nav">
+        <button id="inbox-btn">Inbox</button>
+        <button id="outbox-btn">Outbox</button>
+    </div>
+    <div class="filter-controls">
+        <label for="filter-field-inbox">Filter by:</label>
+        <select id="filter-field-inbox" class="filter-field">
+            <option value="fromUser">From User</option>
+            <option value="subject">Subject</option>
+            <option value="content">Content</option>
+        </select>
+        <select id="filter-field-outbox" class="filter-field" style="display:none;">
+            <option value="toUser">To User</option>
+            <option value="subject">Subject</option>
+            <option value="content">Content</option>
+        </select>
+        <input type="text" id="filter-value" placeholder="Filter value">
+        <button id="filter-btn">Filter</button>
+    </div>
+    <div class="sort-controls">
+        <label for="sort-field">Sort by:</label>
+        <select id="sort-field">
+            <option value="sendDate">Date</option>
+            <option value="subject">Subject</option>
+            <option value="content">Content</option>
+        </select>
+        <label for="sort-order">Order:</label>
+        <select id="sort-order">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+        <button id="sort-btn">Sort</button>
+    </div>
+    <table id="mailbox-table">
+        <thead>
+        <tr>
+            <th id="dynamic-header">From/To</th>
+            <th>Date</th>
+            <th>Subject</th>
+            <th>Content</th>
+        </tr>
+        </thead>
+        <tbody id="mailbox-table-body">
+        <!-- Messages will be appended here -->
+        </tbody>
+    </table>
+    <div id="message"></div>
+    <div class="pagination-controls">
+        <label for="page-size">Page Size:</label>
+        <select id="page-size">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="25">25</option>
+        </select>
+        <label for="page-number">Page Number:</label>
+        <select id="page-number"></select>
+        <button id="prev-page">Previous</button>
+        <button id="next-page">Next</button>
+    </div>
+</div>
+
+<script src="scripts/mailbox.js" type="application/javascript"></script>
+<script src="scripts/logout.js"></script>
+</body>
+</html>
