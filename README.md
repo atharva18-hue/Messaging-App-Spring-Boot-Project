@@ -57,7 +57,7 @@ Before running this application, make sure you have the following installed:
 3. **Create a user** (optional, you can use existing user):
    ```sql
    CREATE USER  atharva WITH PASSWORD 'your_password';
-   GRANT ALL PRIVILEGES ON DATABASE  atharva TO  atharva;
+   GRANT ALL PRIVILEGES ON DATABASE atharva TO atharva;
    ```
 
 ##  Configuration
