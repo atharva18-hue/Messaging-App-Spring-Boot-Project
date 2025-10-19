@@ -52,12 +52,12 @@ Before running this application, make sure you have the following installed:
 1. **Install PostgreSQL** on your system
 2. **Create a new database**:
    ```sql
-   CREATE DATABASE burak;
+   CREATE DATABASE atharva;
    ```
 3. **Create a user** (optional, you can use existing user):
    ```sql
-   CREATE USER burak WITH PASSWORD 'your_password';
-   GRANT ALL PRIVILEGES ON DATABASE burak TO burak;
+   CREATE USER  atharva WITH PASSWORD 'your_password';
+   GRANT ALL PRIVILEGES ON DATABASE  atharva TO  atharva;
    ```
 
 ##  Configuration
@@ -70,8 +70,8 @@ Before running this application, make sure you have the following installed:
 
 2. **Update database configuration** in `src/main/resources/application.properties`:
    ```properties
-   spring.datasource.url=jdbc:postgresql://localhost:5432/burak
-   spring.datasource.username=burak
+   spring.datasource.url=jdbc:postgresql://localhost:5432/atharva
+   spring.datasource.username=atharva
    spring.datasource.password=your_password
    ```
 
